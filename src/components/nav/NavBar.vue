@@ -18,6 +18,6 @@ export default defineComponent({
 
 <style scoped>
 .link {
-  @apply font-bold;
+  @apply font-bold text-xl;
 }
 </style>
