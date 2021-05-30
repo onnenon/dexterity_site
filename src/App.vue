@@ -20,4 +20,7 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+html {
+  @apply text-gray-800 bg-gray-50;
+}
 </style>
