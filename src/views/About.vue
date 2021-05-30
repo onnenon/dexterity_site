@@ -19,7 +19,6 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #0f001c;
 }
 .content {
   display: flex;
