@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center">
-    <div class="max-w-screen-xl text-left p-6">
+    <div class="max-w-screen-xl text-left px-6">
       <h1 class="heading">Mission:</h1>
       With a lack of Alliance guilds that value both efficient endgame
       progression, and a respectful tight-knit atmosphere, Dexterity was
