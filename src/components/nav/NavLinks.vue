@@ -1,10 +1,9 @@
 <template>
   <div class="items-right">
-    <router-link
-      to="/about"
-      class="rouded bg-blue-900 text-white bold align-middle"
-      >About</router-link
-    >
+    <router-link to="/about" class="link">About</router-link>
+    <router-link to="/roster" class="link">Roster</router-link>
+    <router-link to="/sales" class="link">Sales</router-link>
+    <router-link to="/recruitment" class="link">Recruitment</router-link>
   </div>
 </template>
 
@@ -15,4 +14,8 @@ export default defineComponent({
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.link {
+  @apply font-bold pl-4;
+}
+</style>

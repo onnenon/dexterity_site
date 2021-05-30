@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center">
     <div class="flex flex-auto flex-row justify-between max-w-screen-xl p-6">
-      <div class="font-bold">Dexterity</div>
+      <router-link to="/" class="link">Dexterity</router-link>
       <NavLinks />
     </div>
   </div>
@@ -16,4 +16,8 @@ export default defineComponent({
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.link {
+  @apply font-bold;
+}
+</style>
