@@ -37,17 +37,17 @@
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
 export default defineComponent({
-  name: 'HelloWorld',
+  name: 'home',
   props: {
     msg: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   setup: () => {
     const count = ref(0)
     return { count }
-  }
+  },
 })
 </script>
 
