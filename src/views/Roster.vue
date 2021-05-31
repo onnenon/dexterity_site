@@ -9,6 +9,7 @@
             v-for="(tank, index) in roster.tanks"
             :name="tank.name"
             :class_="tank.class"
+            :isOfficer="tank.isOfficer"
             :key="index"
           />
         </div>
@@ -19,6 +20,7 @@
           v-for="(healer, index) in roster.healers"
           :name="healer.name"
           :class_="healer.class"
+          :isOfficer="healer.isOfficer"
           :key="index"
         />
       </div>
@@ -28,6 +30,7 @@
           v-for="(mdps, index) in roster.melee"
           :name="mdps.name"
           :class_="mdps.class"
+          :isOfficer="mdps.isOfficer"
           :key="index"
         />
       </div>
@@ -37,6 +40,7 @@
           v-for="(rdps, index) in roster.ranged"
           :name="rdps.name"
           :class_="rdps.class"
+          :isOfficer="rdps.isOfficer"
           :key="index"
         />
       </div>

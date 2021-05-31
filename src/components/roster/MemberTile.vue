@@ -9,6 +9,12 @@
       <img class="flex w-20 h-20 mx-4" :src="iconPath" />
       <div class="flex flex-auto flex-col px-4">
         <div class="text" :style="{ color: classColor }">{{ name }}</div>
+        <div
+          v-if="isOfficer"
+          class="text font-robotoMono text-sm text-gray-400"
+        >
+          OFFICER
+        </div>
       </div>
     </a>
   </div>
@@ -22,6 +28,7 @@ import { getImagePathForClass } from '../../common/images'
 export default defineComponent({
   name: 'member-tile',
   props: {
+    isOfficer: { type: Boolean, defualt: false },
     name: { type: String, required: true },
     class_: { type: String, required: true },
   },
