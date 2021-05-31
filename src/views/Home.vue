@@ -43,7 +43,7 @@
       split groups and thus do not require an alt.
       <br />
 
-      <h1 class="heading">Shadowlands Goals:</h1>
+      <h1 class="heading">Shadowlands Goals</h1>
       <ul>
         <li class="goals-li">
           <font-awesome-icon
