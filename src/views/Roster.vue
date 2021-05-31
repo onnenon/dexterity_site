@@ -22,23 +22,15 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Class, GuildRoster } from '../types/types'
+import { GuildRoster } from '../common/types'
+import { Roster } from '../common/roster'
 import MemberTile from '../components/roster/MemberTile.vue'
 
 export default defineComponent({
   components: { MemberTile },
   name: 'roster',
-  data(): GuildRoster {
-    return {
-      tanks: [
-        { name: 'Nolarya', class: Class.DRUID },
-        { name: 'Damdifino', class: Class.DH },
-        { name: 'Veserria', class: Class.MONK },
-      ],
-      healers: [],
-      melee: [],
-      ranged: [],
-    }
+  data(): { roster: GuildRoster } {
+    return { roster: Roster }
   },
 })
 </script>
