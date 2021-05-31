@@ -32,10 +32,12 @@
 
       <br />
       <br />
-      <span class="font-bold">Progression Raid Schedule (EST)</span><br />
-      Tues......10:00 pm - 1:00 am<br />
-      Wed.......10:00 pm - 1:00 am<br />
-      Thurs.....10:00 pm - 1:00 am<br />
+      <div class="font-bold text-4xl py-2">Progression Raid Schedule (EST)</div>
+      <div class="font-mono">
+        Tues......10:00 pm - 1:00 am<br />
+        Wed.......10:00 pm - 1:00 am<br />
+        Thurs.....10:00 pm - 1:00 am<br />
+      </div>
 
       <br />
       This is a strict 9-hour per week schedule. We do not add extra time or
