@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-row items-center">
-    <div class="{{style}}">{{ this.text }}</div>
+    <div class="{{style}}">{{ text }}</div>
     <font-awesome-icon
-      @click="this.copy"
+      @click="copy"
       class="text-gray-600 mx-2 cursor-pointer hover:text-gray-400"
-      :class="this.iconSize"
+      :class="iconSize"
       :icon="['far', 'copy']"
     />
   </div>

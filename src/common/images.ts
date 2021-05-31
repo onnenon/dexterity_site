@@ -10,7 +10,7 @@ import rogue_image from '../assets/class_icons/rogue.png'
 import shaman_image from '../assets/class_icons/shaman.png'
 import warlock_image from '../assets/class_icons/warlock.png'
 import warrior_image from '../assets/class_icons/warrior.png'
-import { Class } from './types'
+import { ClassEnum } from './types'
 
 const classImagePaths = {
   DK: dk_image,
@@ -29,29 +29,29 @@ const classImagePaths = {
 
 export const getImagePathForClass = (class_: string): string => {
   switch (class_) {
-    case Class.DH:
+    case ClassEnum.DH:
       return classImagePaths.DH
-    case Class.DK:
+    case ClassEnum.DK:
       return classImagePaths.DK
-    case Class.DRUID:
+    case ClassEnum.DRUID:
       return classImagePaths.DRUID
-    case Class.HUNTER:
+    case ClassEnum.HUNTER:
       return classImagePaths.HUNTER
-    case Class.MAGE:
+    case ClassEnum.MAGE:
       return classImagePaths.MAGE
-    case Class.MONK:
+    case ClassEnum.MONK:
       return classImagePaths.MONK
-    case Class.PALADIN:
+    case ClassEnum.PALADIN:
       return classImagePaths.PALADIN
-    case Class.PRIEST:
+    case ClassEnum.PRIEST:
       return classImagePaths.PRIEST
-    case Class.ROGUE:
+    case ClassEnum.ROGUE:
       return classImagePaths.ROGUE
-    case Class.SHAMAN:
+    case ClassEnum.SHAMAN:
       return classImagePaths.SHAMAN
-    case Class.WARLOCK:
+    case ClassEnum.WARLOCK:
       return classImagePaths.WARLOCK
-    case Class.WARRIOR:
+    case ClassEnum.WARRIOR:
       return classImagePaths.WARRIOR
     default:
       return classImagePaths.WARRIOR

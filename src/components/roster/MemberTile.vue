@@ -2,7 +2,7 @@
   <div class="tile">
     <img class="flex w-20 h-20 mx-4" :src="iconPath" />
     <div class="flex flex-col px-4">
-      <div class="text" :style="{ color: classColor }">{{ this.name }}</div>
+      <div class="text" :style="{ color: classColor }">{{ name }}</div>
     </div>
   </div>
 </template>
@@ -16,14 +16,14 @@ export default defineComponent({
   name: 'member-tile',
   props: {
     name: { type: String, required: true },
-    class: { type: String, required: true },
+    class_: { type: String, required: true },
   },
   computed: {
     iconPath(): string {
-      return getImagePathForClass(this.class)
+      return getImagePathForClass(this.class_)
     },
     classColor(): string {
-      return getColorForClass(this.class)
+      return getColorForClass(this.class_)
     },
   },
 })

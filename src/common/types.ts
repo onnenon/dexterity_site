@@ -1,4 +1,4 @@
-export enum Class {
+export enum ClassEnum {
   DK = 'dk',
   DH = 'dh',
   DRUID = 'druid',
@@ -14,7 +14,7 @@ export enum Class {
 }
 
 export interface Member {
-  class: Class
+  class: ClassEnum
   name: string
 }
 
