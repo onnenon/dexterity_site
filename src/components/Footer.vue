@@ -8,6 +8,7 @@
       mt-20
       bg-gray-800
       text-gray-500
+      dark:bg-gray-800
     "
   >
     <div class="flex flex-wrap flex-auto flex-row max-w-screen-xl">

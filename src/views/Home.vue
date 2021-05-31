@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center bg-gray-900">
     <div class="max-w-screen-xl text-left px-6 pb-6">
       <h1 class="heading">Mission</h1>
       With a lack of Alliance guilds that value both efficient endgame
@@ -165,10 +165,10 @@ export default defineComponent({
   @apply text-4xl sm:text-5xl font-black py-4 font-roboto;
 }
 .check-icon {
-  @apply text-xl mr-4 text-gray-900;
+  @apply text-xl mr-4 text-gray-900 dark:text-gray-400;
 }
 .dot-icon {
-  @apply text-sm mr-4 text-gray-900;
+  @apply text-sm mr-4 text-gray-900 dark:text-gray-400;
 }
 .goals-li {
   @apply flex items-center p-2;

@@ -1,5 +1,14 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div
+    class="
+      flex flex-col
+      min-h-screen
+      text-gray-800
+      dark:text-gray-50
+      bg-gray-50
+      dark:bg-gray-900
+    "
+  >
     <NavBar />
     <main class="flex-grow">
       <router-view />
@@ -26,7 +35,7 @@ export default defineComponent({
   min-width: 350px;
 }
 html {
-  @apply text-gray-800 bg-gray-50 font-titillium text-lg;
+  @apply font-titillium text-lg;
 }
 h1 h2 h3 {
   @apply font-roboto;
