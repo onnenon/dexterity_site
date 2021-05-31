@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center bg-gray-900">
     <div class="max-w-screen-xl text-left px-6 pb-6">
       <h1 class="heading">Mission</h1>
       With a lack of Alliance guilds that value both efficient endgame

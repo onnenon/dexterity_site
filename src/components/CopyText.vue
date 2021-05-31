@@ -1,6 +1,8 @@
 <template>
   <div ref="container" class="copytext-container" @click="copy">
-    <div class="text-gray-800" :class="style">{{ text }}</div>
+    <div class="text-gray-800 dark:text-gray-400" :class="style">
+      {{ text }}
+    </div>
     <svg
       width="24"
       height="24"
@@ -43,6 +45,6 @@ export default defineComponent({
 
 <style>
 .copytext-container {
-  @apply cursor-pointer flex flex-initial text-gray-400 hover:text-gray-900 py-2 items-center space-x-4;
+  @apply cursor-pointer flex flex-initial text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 py-2 items-center space-x-4;
 }
 </style>
