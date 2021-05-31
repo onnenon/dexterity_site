@@ -18,6 +18,6 @@ export default defineComponent({
 
 <style scoped>
 .link {
-  @apply font-black text-4xl bg-gray-800 p-3 text-gray-50;
+  @apply font-black text-4xl bg-gray-800 p-3 text-gray-50 select-none;
 }
 </style>

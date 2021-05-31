@@ -21,16 +21,10 @@
         If you have any questions please feel free to contact us on Bnet:
       </div>
       <div>
-        <div class="font-bold">Kenpewz:</div>
-        <div class="copy-text" @click="copy('Kenfacto#1722')">
-          Kenfacto#1722
-        </div>
-      </div>
-      <div>
-        <div class="font-bold">Kefloric:</div>
-        <div class="copy-text" @click="copy('Vampizard#1310')">
-          Vampizard#1310
-        </div>
+        <div class="font-bold pr-2">Kenpewz:</div>
+        <CopyText text="Kenfacto#1722" />
+        <div class="font-bold pr-2">Kefloric:</div>
+        <CopyText text="Vampizard#1310" />
       </div>
     </div>
   </div>
@@ -38,8 +32,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import CopyText from '../components/CopyText.vue'
+
 export default defineComponent({
   name: 'recruitment',
+  components: { CopyText },
   data() {
     return { canCopy: false }
   },

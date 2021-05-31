@@ -15,6 +15,6 @@ export default defineComponent({
 
 <style scoped>
 .link {
-  @apply font-bold pl-4 hover:text-gray-500 font-roboto text-xl;
+  @apply font-bold pl-4 hover:text-gray-500 font-roboto text-xl select-none;
 }
 </style>
