@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         titillium: ['Titillium Web', ...defaultTheme.fontFamily.sans],
         roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
+        robotoMono: ['Roboto Mono', ...defaultTheme.fontFamily.mono],
       },
       colors: {
         mage: { DEFAULT: '#69CCF0' },

@@ -2,7 +2,8 @@
   <div class="flex justify-center">
     <div
       class="
-        flex flex-auto flex-row
+        flex flex-auto flex-col
+        sm:flex-row
         justify-between
         max-w-screen-xl
         p-6
@@ -26,6 +27,6 @@ export default defineComponent({
 
 <style scoped>
 .link {
-  @apply font-black text-4xl bg-gray-800 p-3 text-gray-50 select-none;
+  @apply font-black flex-initial text-4xl bg-gray-800 p-3 text-gray-50 select-none;
 }
 </style>

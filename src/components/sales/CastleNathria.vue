@@ -1,8 +1,8 @@
 <template>
   <div class="background-image rounded-xl p-1 shadow-lg lg:w-1/2">
     <div class="forground flex flex-col p-4 rounded-xl">
-      <div class="text-2xl font-bold">Castle Nathria</div>
-      <div class="font-bold text-xl py-2">Heroic</div>
+      <div class="text-xl md:text-2xl font-bold">Castle Nathria</div>
+      <div class="font-bold text-lg md:text-xl py-2">Heroic</div>
       <table class="table-fixed">
         <tr>
           <td>10/10H Full Clear</td>
@@ -41,6 +41,6 @@ export default defineComponent({
   backdrop-filter: blur(4px);
 }
 tr {
-  @apply text-lg;
+  @apply text-sm md:text-lg;
 }
 </style>
