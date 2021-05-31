@@ -32,7 +32,7 @@ export const Roster: GuildRoster = {
     { name: 'Arysage', class: ClassEnum.MAGE },
     { name: 'Zerefblast', class: ClassEnum.MAGE },
     { name: 'Irohbrash', class: ClassEnum.MAGE },
-    { name: 'Scampy', class: ClassEnum.HUNTER },
+    { name: 'Scàmpy', class: ClassEnum.HUNTER },
     { name: 'Bartwave', class: ClassEnum.SHAMAN },
     { name: 'Iaccus', class: ClassEnum.PRIEST },
     { name: 'Foxyshazzam', class: ClassEnum.PRIEST },
