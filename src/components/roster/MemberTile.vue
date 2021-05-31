@@ -6,7 +6,7 @@
       alt="Armory Link"
       target="_blank"
     >
-      <img class="flex w-20 h-20 mx-4" :src="iconPath" />
+      <img class="flex w-20 h-20 mx-4" :src="iconPath" alt="class icon" />
       <div class="flex flex-auto flex-col px-4">
         <div class="text" :style="{ color: classColor }">{{ name }}</div>
         <div
