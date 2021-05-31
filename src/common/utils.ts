@@ -1,6 +1,6 @@
 import { Class } from './types'
 
-export const getColorForClass = (class_: Class) => {
+export const getColorForClass = (class_: string): string => {
   switch (class_) {
     case Class.DH:
       return '#A330C9'
@@ -26,5 +26,7 @@ export const getColorForClass = (class_: Class) => {
       return '#9482C9'
     case Class.WARRIOR:
       return '#C79C63'
+    default:
+      return '#FFFFFF'
   }
 }
