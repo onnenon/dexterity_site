@@ -41,7 +41,7 @@ export default defineComponent({
 
 <style>
 .tile {
-  @apply flex flex-row md:w-5/12 flex-auto md:flex-initial bg-gray-800 rounded-xl mx-4 mb-4 h-32 py-4 shadow-lg;
+  @apply flex flex-row md:w-5/12 flex-auto md:flex-initial bg-gray-800 hover:bg-gray-900 rounded-xl mx-4 mb-4 h-32 py-4 shadow-lg;
 }
 .text {
   @apply flex text-gray-50 text-2xl font-bold break-all;
