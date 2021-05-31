@@ -1,6 +1,8 @@
 <template>
   <div class="tile">
-    <img class="flex w-20 h-20 mx-4" :src="iconPath" />
+    <a :href="armoryLink" alt="Armory Link">
+      <img class="flex w-20 h-20 mx-4" :src="iconPath"
+    /></a>
     <div class="flex flex-col px-4">
       <div class="text" :style="{ color: classColor }">{{ name }}</div>
     </div>
@@ -24,6 +26,9 @@ export default defineComponent({
     },
     classColor(): string {
       return getColorForClass(this.class_)
+    },
+    armoryLink(): string {
+      return `https://worldofwarcraft.com/en-us/character/us/moon-guard/${this.name}`
     },
   },
 })
