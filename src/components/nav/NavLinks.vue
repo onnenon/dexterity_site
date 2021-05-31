@@ -1,6 +1,5 @@
 <template>
-  <div class="items-right">
-    <router-link to="/about" class="link">About</router-link>
+  <div class="flex items-center">
     <router-link to="/roster" class="link">Roster</router-link>
     <router-link to="/sales" class="link">Sales</router-link>
     <router-link to="/recruitment" class="link">Recruitment</router-link>
@@ -16,6 +15,6 @@ export default defineComponent({
 
 <style scoped>
 .link {
-  @apply font-bold pl-4 hover:text-gray-500;
+  @apply font-bold pl-4 hover:text-gray-500 font-roboto text-xl;
 }
 </style>

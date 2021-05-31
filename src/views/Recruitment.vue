@@ -59,7 +59,7 @@ export default defineComponent({
 
 <style>
 .button {
-  @apply flex items-center justify-center rounded-md bg-gray-800 text-white my-6 p-2 hover:bg-gray-700 lg:w-2/12;
+  @apply flex items-center font-bold font-roboto justify-center rounded-md bg-gray-800 text-white my-6 p-2 hover:bg-gray-700 lg:w-2/12;
 }
 .copy-text {
   @apply cursor-pointer hover:text-gray-600;

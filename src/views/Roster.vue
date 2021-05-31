@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center">
     <div class="max-w-screen-xl text-left p-6">
-      <h1>Roster</h1>
+      <h1 class="text-2xl font-bold font-roboto">Roster</h1>
     </div>
   </div>
 </template>

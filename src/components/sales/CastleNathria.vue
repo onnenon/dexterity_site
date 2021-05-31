@@ -1,29 +1,31 @@
 <template>
-  <div class="background-image p-4 rounded-lg shadow-lg flex flex-col">
-    <div class="text-xl font-bold">Castle Nathria</div>
-    <div class="font-bold py-2">Heroic</div>
-    <table>
-      <tr>
-        <th></th>
-        <th>Price</th>
-      </tr>
-      <tr>
-        <td>10/10H Full Clear</td>
-        <td>200k</td>
-      </tr>
-      <tr>
-        <td>Sire Denathrius (AotC) Only</td>
-        <td>60k</td>
-      </tr>
-      <tr>
-        <td>Funnel</td>
-        <td>110k each</td>
-      </tr>
-      <tr>
-        <td>Full Clear with 4 Funnels</td>
-        <td>625k</td>
-      </tr>
-    </table>
+  <div class="background-image rounded-xl p-1 shadow-lg lg:w-1/2">
+    <div class="forground flex flex-col p-4 rounded-xl">
+      <div class="text-2xl font-bold">Castle Nathria</div>
+      <div class="font-bold text-xl py-2">Heroic</div>
+      <table class="table-fixed">
+        <tr>
+          <th>Offering</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>10/10H Full Clear</td>
+          <td>200k</td>
+        </tr>
+        <tr>
+          <td>Sire Denathrius (AotC) Only</td>
+          <td>60k</td>
+        </tr>
+        <tr>
+          <td>Funnel</td>
+          <td>110k each</td>
+        </tr>
+        <tr>
+          <td>Full Clear with 4 Funnels</td>
+          <td>625k</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -38,5 +40,11 @@ export default defineComponent({
 .background-image {
   background-image: url('../../assets/cn_banner.jpg');
   color: #ffffff;
+}
+.forground {
+  backdrop-filter: blur(4px);
+}
+tr {
+  @apply text-lg;
 }
 </style>

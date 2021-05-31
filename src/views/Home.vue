@@ -123,6 +123,6 @@ export default defineComponent({
 
 <style>
 .heading {
-  @apply text-lg font-bold py-4;
+  @apply text-4xl font-black py-4 font-roboto;
 }
 </style>
