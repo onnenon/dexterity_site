@@ -33,7 +33,7 @@
       <br />
       <br />
       <div class="font-bold text-4xl py-2">Progression Raid Schedule (EST)</div>
-      <div class="font-mono">
+      <div class="font-robotoMono">
         Tues......10:00 pm - 1:00 am<br />
         Wed.......10:00 pm - 1:00 am<br />
         Thurs.....10:00 pm - 1:00 am<br />
