@@ -13,12 +13,25 @@
       <a
         class="button"
         href="https://docs.google.com/forms/d/e/1FAIpQLSfge_KbrMTzClkyscDYzRs3ZKyPlMYlMh0kIwLbmLX-ut9aFQ/viewform"
+        target="_blank"
         >Apply</a
       >
 
-      If you have any questions please feel free to contact us on Bnet:<br />
-      <b>Kenpewz:</b> Kenfacto#1722<br />
-      <b>Kefloric:</b> Vampizard#1310
+      <div class="text-lg pb-4">
+        If you have any questions please feel free to contact us on Bnet:
+      </div>
+      <div>
+        <div class="font-bold">Kenpewz:</div>
+        <div class="copy-text" @click="copy('Kenfacto#1722')">
+          Kenfacto#1722
+        </div>
+      </div>
+      <div>
+        <div class="font-bold">Kefloric:</div>
+        <div class="copy-text" @click="copy('Vampizard#1310')">
+          Vampizard#1310
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -27,11 +40,28 @@
 import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'recruitment',
+  data() {
+    return { canCopy: false }
+  },
+  created() {
+    this.canCopy = !!navigator.clipboard
+  },
+  methods: {
+    copy(text: string) {
+      if (this.canCopy) {
+        alert(`Copied ${text}`)
+        navigator.clipboard.writeText(text)
+      }
+    },
+  },
 })
 </script>
 
 <style>
 .button {
-  @apply flex items-center justify-center rounded-md bg-gray-800 text-white my-4 p-2 hover:bg-gray-700 lg:w-2/12;
+  @apply flex items-center justify-center rounded-md bg-gray-800 text-white my-6 p-2 hover:bg-gray-700 lg:w-2/12;
+}
+.copy-text {
+  @apply cursor-pointer hover:text-gray-600;
 }
 </style>
