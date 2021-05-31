@@ -1,6 +1,14 @@
 <template>
   <div class="flex justify-center">
-    <div class="flex flex-auto flex-row justify-between max-w-screen-xl p-6">
+    <div
+      class="
+        flex flex-auto flex-row
+        justify-between
+        max-w-screen-xl
+        p-6
+        flex-wrap
+      "
+    >
       <router-link to="/" class="link">Dexterity</router-link>
       <NavLinks />
     </div>

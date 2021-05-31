@@ -37,20 +37,6 @@ import CopyText from '../components/CopyText.vue'
 export default defineComponent({
   name: 'recruitment',
   components: { CopyText },
-  data() {
-    return { canCopy: false }
-  },
-  created() {
-    this.canCopy = !!navigator.clipboard
-  },
-  methods: {
-    copy(text: string) {
-      if (this.canCopy) {
-        alert(`Copied ${text}`)
-        navigator.clipboard.writeText(text)
-      }
-    },
-  },
 })
 </script>
 

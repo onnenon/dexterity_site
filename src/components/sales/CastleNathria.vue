@@ -5,10 +5,6 @@
       <div class="font-bold text-xl py-2">Heroic</div>
       <table class="table-fixed">
         <tr>
-          <th>Offering</th>
-          <th>Price</th>
-        </tr>
-        <tr>
           <td>10/10H Full Clear</td>
           <td>200k</td>
         </tr>
