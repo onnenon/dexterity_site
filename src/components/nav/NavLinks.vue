@@ -1,6 +1,7 @@
 <template>
   <div class="flex items-center flex-wrap">
-    <router-link to="/roster" class="link">Roster</router-link>
+    <router-link to="/" class="link">Home</router-link>
+    <router-link to="/roster" class="link pl-6">Roster</router-link>
     <router-link to="/sales" class="link pl-6">Sales</router-link>
     <router-link to="/recruitment" class="link pl-6">Recruitment</router-link>
   </div>
