@@ -165,10 +165,10 @@ export default defineComponent({
   @apply text-4xl sm:text-5xl font-black py-4 font-roboto;
 }
 .check-icon {
-  @apply text-xl mr-4 text-gray-900;
+  @apply text-xl mr-4 text-gray-900 dark:text-gray-400;
 }
 .dot-icon {
-  @apply text-sm mr-4 text-gray-900;
+  @apply text-sm mr-4 text-gray-900 dark:text-gray-400;
 }
 .goals-li {
   @apply flex items-center p-2;
