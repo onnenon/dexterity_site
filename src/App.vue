@@ -23,6 +23,7 @@ export default defineComponent({
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 445px;
 }
 html {
   @apply text-gray-800 bg-gray-50 font-titillium text-lg;

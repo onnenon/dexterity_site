@@ -1,10 +1,8 @@
 <template>
-  <div class="flex flex-auto tile py-4 min-w-min">
+  <div class="tile">
     <img class="flex w-20 h-20 mx-4" :src="iconPath" />
     <div class="flex flex-col px-4">
       <div class="text" :style="{ color: classColor }">{{ this.name }}</div>
-      <div></div>
-      <div></div>
     </div>
   </div>
 </template>
@@ -20,9 +18,6 @@ export default defineComponent({
     name: { type: String, required: true },
     class: { type: String, required: true },
   },
-  data() {
-    return { logo: '../../assets/wow.svg' }
-  },
   computed: {
     iconPath(): string {
       return getImagePathForClass(this.class)
@@ -36,9 +31,9 @@ export default defineComponent({
 
 <style>
 .tile {
-  @apply flex lg:w-5/12 md:w-5/12 bg-gray-800 rounded-lg mx-4 mb-4 h-32;
+  @apply flex md:w-5/12 flex-auto md:flex-initial bg-gray-800 rounded-lg mx-4 mb-4 h-32 py-4;
 }
 .text {
-  @apply flex text-gray-50 text-2xl font-bold overflow-ellipsis;
+  @apply flex text-gray-50 text-2xl font-bold break-all;
 }
 </style>
