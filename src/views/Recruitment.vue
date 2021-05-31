@@ -1,7 +1,9 @@
 <template>
   <div class="flex justify-center">
     <div class="flex flex-col max-w-screen-xl text-left p-6">
-      <h1 class="text-6xl font-black py-4 font-roboto">Recruitment</h1>
+      <h1 class="sm:text-6xl text-4xl font-black py-4 font-roboto">
+        Recruitment
+      </h1>
       We are looking to recruit players that love raiding just as much as we do.
       If you have the performance and attendance necessary to push for eventual
       famed slayer we would love to talk to you. If you are constantly missing

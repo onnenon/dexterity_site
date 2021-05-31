@@ -162,7 +162,7 @@ export default defineComponent({
 
 <style>
 .heading {
-  @apply text-5xl font-black py-4 font-roboto;
+  @apply text-4xl sm:text-5xl font-black py-4 font-roboto;
 }
 .check-icon {
   @apply text-xl mr-4 text-gray-900;

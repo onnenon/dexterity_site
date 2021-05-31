@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center">
     <div class="flex-auto max-w-screen-xl text-left p-6 jusify-left">
-      <h1 class="text-6xl font-black font-roboto pb-6">Roster</h1>
+      <h1 class="sm:text-6xl text-4xl font-black font-roboto pb-6">Roster</h1>
       <div class="flex flex-col">
         <div class="header">Tanks</div>
         <div class="flex flex-row flex-wrap">
@@ -65,6 +65,6 @@ export default defineComponent({
 
 <style>
 .header {
-  @apply text-4xl font-black pb-4;
+  @apply sm:text-4xl text-2xl font-black pb-4;
 }
 </style>
