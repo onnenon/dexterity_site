@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center">
-    <div class="max-w-screen-xl text-left px-6">
+    <div class="max-w-screen-xl text-left px-6 pb-6">
       <h1 class="heading">Mission:</h1>
       With a lack of Alliance guilds that value both efficient endgame
       progression, and a respectful tight-knit atmosphere, Dexterity was
@@ -9,7 +9,7 @@
       years, Dexterity will be a fresh opportunity for some, and for others it
       will be a community they've been searching for.
 
-      <h1>About Us:</h1>
+      <h1 class="heading">About Us:</h1>
       Dexterity is a guild that aims to be one of the most competitive raiding
       guilds on a light schedule, all while fostering an inclusive and
       supportive community of people who are excited to login everyday and enjoy
@@ -31,7 +31,8 @@
       than their own weight here.
 
       <br />
-      Progression Raid Schedule (EST)<br />
+      <br />
+      <span class="font-bold">Progression Raid Schedule (EST)</span><br />
       Tues......10:00 pm - 1:00 am<br />
       Wed.......10:00 pm - 1:00 am<br />
       Thurs.....10:00 pm - 1:00 am<br />
@@ -109,18 +110,6 @@
       we expect all raiders to be able to maintain as close to 100% attendance
       as possible during progression. That being said, we understand real life
       happens and expect our raiders to call out as far in advance as possible.
-
-      <h1 class="heading">Apply:</h1>
-      We are looking to recruit players that love raiding just as much as we do.
-      If you have the performance and attendance necessary to push for eventual
-      famed slayer we would love to talk to you. If you are constantly missing
-      raids, immune to constructive criticism, do no research outside of raid,
-      or do not want to get focused and progress during raid time then this is
-      not the mythic raid team for you. If any of this sounds appealing to you,
-      you are encouraged to submit an application:
-      https://docs.google.com/forms/d/e/1FAIpQLSfge_KbrMTzClkyscDYzRs3ZKyPlMYlMh0kIwLbmLX-ut9aFQ/viewform
-      Contact If you have any questions please feel free to contact us on Bnet:
-      Kenpewz: Kenfacto#1722 Kefloric: Vampizard#1310
     </div>
   </div>
 </template>
@@ -132,8 +121,8 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
+<style>
 .heading {
-  @apply text-lg font-bold py-4;
+  @apply text-4xl font-black py-4 font-roboto;
 }
 </style>
