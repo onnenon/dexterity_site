@@ -6,7 +6,7 @@
         <div class="header">Tanks</div>
         <div class="flex flex-row flex-wrap">
           <member-tile
-            v-for="(tank, index) in this.tanks"
+            v-for="(tank, index) in this.roster.tanks"
             :name="tank.name"
             :class="tank.class"
             :key="index"
@@ -14,8 +14,32 @@
         </div>
       </div>
       <div class="header">Healers</div>
+      <div class="flex flex-row flex-wrap">
+        <member-tile
+          v-for="(healer, index) in this.roster.healers"
+          :name="healer.name"
+          :class="healer.class"
+          :key="index"
+        />
+      </div>
       <div class="header">Melee</div>
+      <div class="flex flex-row flex-wrap">
+        <member-tile
+          v-for="(mdps, index) in this.roster.melee"
+          :name="mdps.name"
+          :class="mdps.class"
+          :key="index"
+        />
+      </div>
       <div class="header">Ranged</div>
+      <div class="flex flex-row flex-wrap">
+        <member-tile
+          v-for="(rdps, index) in this.roster.ranged"
+          :name="rdps.name"
+          :class="rdps.class"
+          :key="index"
+        />
+      </div>
     </div>
   </div>
 </template>
