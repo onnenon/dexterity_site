@@ -16,6 +16,7 @@ export enum ClassEnum {
 export interface Member {
   class: ClassEnum
   name: string
+  isOfficer?: boolean
 }
 
 export interface GuildRoster {
