@@ -1,9 +1,9 @@
 <template>
-  <div class="flex items-center flex-wrap">
+  <div class="flex flex-col sm:flex-row justify-center items-center flex-wrap">
     <router-link to="/" class="link">Home</router-link>
-    <router-link to="/roster" class="link pl-6">Roster</router-link>
-    <router-link to="/sales" class="link pl-6">Sales</router-link>
-    <router-link to="/recruitment" class="link pl-6">Recruitment</router-link>
+    <router-link to="/roster" class="link">Roster</router-link>
+    <router-link to="/sales" class="link">Sales</router-link>
+    <router-link to="/recruitment" class="link">Recruitment</router-link>
   </div>
 </template>
 
@@ -16,6 +16,6 @@ export default defineComponent({
 
 <style scoped>
 .link {
-  @apply font-bold hover:text-gray-500 font-roboto text-xl select-none py-2;
+  @apply font-bold hover:text-gray-500 font-roboto text-xl select-none py-2 px-3;
 }
 </style>
