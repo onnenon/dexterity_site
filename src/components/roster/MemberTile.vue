@@ -1,8 +1,13 @@
 <template>
   <div class="tile">
-    <a class="flex flex-row" :href="armoryLink" alt="Armory Link">
+    <a
+      class="flex flex-row flex-auto"
+      :href="armoryLink"
+      alt="Armory Link"
+      target="_blank"
+    >
       <img class="flex w-20 h-20 mx-4" :src="iconPath" />
-      <div class="flex flex-col px-4">
+      <div class="flex flex-auto flex-col px-4">
         <div class="text" :style="{ color: classColor }">{{ name }}</div>
       </div>
     </a>
@@ -36,7 +41,7 @@ export default defineComponent({
 
 <style>
 .tile {
-  @apply flex flex-row md:w-5/12 flex-auto md:flex-initial bg-gray-800 rounded-lg mx-4 mb-4 h-32 py-4;
+  @apply flex flex-row md:w-5/12 flex-auto md:flex-initial bg-gray-800 rounded-lg mx-4 mb-4 h-32 py-4 shadow-lg;
 }
 .text {
   @apply flex text-gray-50 text-2xl font-bold break-all;
