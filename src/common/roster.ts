@@ -1,4 +1,4 @@
-import { GuildRoster, ClassEnum } from './types'
+import { GuildRoster, ClassEnum, RankEnum } from './types'
 
 export const Roster: GuildRoster = {
   tanks: [
@@ -7,15 +7,15 @@ export const Roster: GuildRoster = {
     { name: 'Veserria', class: ClassEnum.MONK },
   ],
   healers: [
-    { name: 'Kooziecup', class: ClassEnum.MONK, isOfficer: true },
-    { name: 'Kefloric', class: ClassEnum.PRIEST, isOfficer: true },
+    { name: 'Kooziecup', class: ClassEnum.MONK, rank: RankEnum.OFFICER },
+    { name: 'Kefloric', class: ClassEnum.PRIEST, rank: RankEnum.OFFICER },
     { name: 'Illidansbae', class: ClassEnum.PALADIN },
     { name: 'Honeybunnyy', class: ClassEnum.PALADIN },
     { name: 'Nulshock', class: ClassEnum.SHAMAN },
     { name: 'Wasat', class: ClassEnum.SHAMAN },
   ],
   melee: [
-    { name: 'Lynxx', class: ClassEnum.DRUID, isOfficer: true },
+    { name: 'Lynxx', class: ClassEnum.DRUID, rank: RankEnum.OFFICER },
     { name: 'Macoliann', class: ClassEnum.PALADIN },
     { name: 'Aeterra', class: ClassEnum.PALADIN },
     { name: 'Frahstt', class: ClassEnum.DH },
@@ -24,9 +24,9 @@ export const Roster: GuildRoster = {
     { name: 'Spinkseh', class: ClassEnum.ROGUE },
   ],
   ranged: [
-    { name: 'Kenpewz', class: ClassEnum.DRUID, isOfficer: true },
+    { name: 'Kenpewz', class: ClassEnum.DRUID, rank: RankEnum.GM },
     { name: 'Lullz', class: ClassEnum.DRUID },
-    { name: 'Fathomm', class: ClassEnum.WARLOCK, isOfficer: true },
+    { name: 'Fathomm', class: ClassEnum.WARLOCK, rank: RankEnum.OFFICER },
     { name: 'Saelae', class: ClassEnum.WARLOCK },
     { name: 'Sylgja', class: ClassEnum.WARLOCK },
     { name: 'Arysage', class: ClassEnum.MAGE },
