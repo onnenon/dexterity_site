@@ -13,10 +13,15 @@ export enum ClassEnum {
   WARRIOR = 'warrior',
 }
 
+export enum RankEnum {
+  OFFICER = 'officer',
+  GM = 'gm',
+}
+
 export interface Member {
   class: ClassEnum
   name: string
-  isOfficer?: boolean
+  rank?: RankEnum
 }
 
 export interface GuildRoster {

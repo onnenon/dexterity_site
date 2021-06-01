@@ -9,12 +9,7 @@
       <img class="flex w-20 h-20 mx-4" :src="iconPath" alt="class icon" />
       <div class="flex flex-auto flex-col px-4">
         <div class="text" :style="{ color: classColor }">{{ name }}</div>
-        <div
-          v-if="isOfficer"
-          class="text font-robotoMono text-sm text-gray-400"
-        >
-          OFFICER
-        </div>
+        <TitleText :rank="rank" />
       </div>
     </a>
   </div>
@@ -22,15 +17,17 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import TitleText from './TitleText.vue'
 import { getColorForClass } from '../../common/utils'
 import { getImagePathForClass } from '../../common/images'
 
 export default defineComponent({
   name: 'member-tile',
+  components: { TitleText },
   props: {
-    isOfficer: { type: Boolean, defualt: false },
     name: { type: String, required: true },
     class_: { type: String, required: true },
+    rank: String,
   },
   computed: {
     iconPath(): string {
